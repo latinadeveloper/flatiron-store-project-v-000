@@ -4,5 +4,8 @@
         <% if !!@cart %>
           <li> <%= link_to "Cart", cart_path(current_cart) %></li>
         <% end %>
+        <li> <%= link_to "Sign In", new_user_session_path %></li>
+        <li> <%= link_to "Sign Up", new_user_registration_path %></li>
+        <li> <%= link_to "Sign out", destroy_user_session_path, method: :delete %></li>
     </ul>
 </nav>
